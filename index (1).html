@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            width: 50%;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido a Mi Primera Página Web</h1>
+
+    <!-- Tabla Avanzada -->
+    <h2>Tabla Avanzada</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fila 1, Celda 1</td>
+                <td>Fila 1, Celda 2</td>
+                <td>Fila 1, Celda 3</td>
+            </tr>
+            <tr>
+                <td>Fila 2, Celda 1</td>
+                <td>Fila 2, Celda 2</td>
+                <td>Fila 2, Celda 3</td>
+            </tr>
+            <tr>
+                <td>Fila 3, Celda 1</td>
+                <td>Fila 3, Celda 2</td>
+                <td>Fila 3, Celda 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario -->
+    <h2>Formulario</h2>
+    <form action="procesar_formulario.php" method="post">
+        <!-- Preguntas de entrada de texto -->
+        <label for="pregunta1">Pregunta 1:</label>
+        <input type="text" id="pregunta1" name="pregunta1" required>
+
+        <label for="pregunta2">Pregunta 2:</label>
+        <input type="text" id="pregunta2" name="pregunta2" required>
+
+        <!-- Preguntas de selección múltiple -->
+        <label for="pregunta3">Pregunta 3:</label>
+        <select id="pregunta3" name="pregunta3" required>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+
+        <!-- Preguntas de checkbox -->
+        <label>Pregunta 4: Marca las opciones que apliquen</label>
+        <input type="checkbox" id="opcion1" name="pregunta4[]" value="opcion1">
+        <label for="opcion1">Opción 1</label>
+        <input type="checkbox" id="opcion2" name="pregunta4[]" value="opcion2">
+        <label for="opcion2">Opción 2</label>
+        <input type="checkbox" id="opcion3" name="pregunta4[]" value="opcion3">
+        <label for="opcion3">Opción 3</label>
+
+        <!-- Más preguntas de entrada de texto -->
+        <label for="pregunta5">Pregunta 5:</label>
+        <input type="text" id="pregunta5" name="pregunta5" required>
+
+        <label for="pregunta6">Pregunta 6:</label>
+        <input type="text" id="pregunta6" name="pregunta6" required>
+
+        <!-- Más preguntas de selección múltiple -->
+        <label for="pregunta7">Pregunta 7:</label>
+        <select id="pregunta7" name="pregunta7" required>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+
+        <!-- Más preguntas de checkbox -->
+        <label>Pregunta 8: Marca las opciones que apliquen</label>
+        <input type="checkbox" id="opcion4" name="pregunta8[]" value="opcion1">
+        <label for="opcion4">Opción 1</label>
+        <input type="checkbox" id="opcion5" name="pregunta8[]" value="opcion2">
+        <label for="opcion5">Opción 2</label>
+        <input type="checkbox" id="opcion6" name="pregunta8[]" value="opcion3">
+        <label for="opcion6">Opción 3</label>
+
+        <!-- Otras preguntas -->
+        <label for="pregunta9">Pregunta 9:</label>
+        <input type="text" id="pregunta9" name="pregunta9" required>
+
+        <label for="pregunta10">Pregunta 10:</label>
+        <input type="text" id="pregunta10" name="pregunta10" required>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
+
+<summary></summary>
